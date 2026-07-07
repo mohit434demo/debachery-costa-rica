@@ -29,8 +29,8 @@ I={
  "hero_lafortuna":img("lafortuna.jpg",1500),"shuttle":img("shuttle.jpg"),
  "falls":img("fortuna-waterfall.jpg"),"crlunch":img("cr-lunch.jpg"),"arenal":img("lafortuna.jpg"),
  "springs":img("hot-springs.webp"),"crdinner":img("cr-dinner.jpg"),
- "hero_jaco":img("jaco-hero.jpg",1500),"brekky":img("chef-breakfast.jpg"),"atv":img("atv.jpg"),
- "pool":img("pool.jpg"),"naans":img("naans-curries.jpg"),"night":img("nightlife.jpg"),
+ "hero_jaco":img("jaco-hero.jpg",1500),"brekky":img("chef-breakfast.webp"),"atv":img("atv.jpg"),
+ "pool":img("pool.avif"),"naans":img("naan-curries.png"),"night":img("nightlife.jpg"),
 }
 
 days=[
@@ -88,9 +88,9 @@ days=[
     "facts":["Omelettes + pancakes","Coffee & OJ","Fruit & pastries"],"map":"C.+Bohio,+Jaco,+61101,+Puntarenas,+Costa+Rica",
     "hop":"Gear up: ATV pickup late morning"},
    {"tag":"Late morning","time":"11:00 AM-1:00 PM","title":"ATV jungle tour","img":I["atv"],
-    "body":"Two hours ripping through jungle and back trails around Jaco.",
-    "facts":["~2 hrs","Gets muddy","Closed shoes"],"map":"ATV+Jungle+Tour+Jaco",
-    "bring":["Closed-toe shoes","Clothes you can trash","Sunglasses","Sunscreen"],
+    "body":"Two hours through jungle and back trails. It gets muddy, so wear shoes and clothes you're fine throwing away afterward.",
+    "facts":["~2 hrs","Gets muddy","Throwaway clothes"],"map":"ATV+Jungle+Tour+Jaco",
+    "bring":["Closed-toe shoes you can trash","Clothes you can toss","Sunglasses","Sunscreen"],
     "hop":"Back to the Airbnb to rinse off"},
    {"tag":"Afternoon","time":"~2:00-6:00 PM","title":"Pool & chill","img":I["pool"],
     "body":"Downtime at the house. Pool, drinks, recover before dinner.",
@@ -100,9 +100,9 @@ days=[
     "facts":["Butter Chicken","Lamb Rogan Josh","Paneer Tikka Masala (veg)","Garlic naan"],"map":"Naans+and+Curries+Jaco",
     "link":("Menu & website","https://www.naans-curries.com/")},
    {"tag":"Night","time":"11:00 PM","title":"Out in Jaco","img":I["night"],
-    "body":"Hit the Jaco strip: bars and clubs a few minutes from the house.",
-    "facts":["Jaco strip","Bars & clubs"],"map":"Jaco+nightlife",
-    "night":[("Le Loft Jaco","Le+Loft+Jaco"),("Orange Pub","Orange+Pub+Jaco"),("Republik Jaco","Republik+Jaco")]},
+    "body":"Jaco's nightlife runs along Av. Pastor Diaz, a few minutes from the house. Le Loft and Republik are the big dance clubs; Orange Pub and Los Amigos are the busy bar scene; the Beatle Bar goes latest; Puddlefish is the craft-beer pick.",
+    "facts":["Clubs & bars","Walkable strip","Goes late"],"map":"Av+Pastor+Diaz+Jaco+nightlife",
+    "night":[("Le Loft","Le+Loft+Jaco"),("Republik","Republik+Jaco"),("Orange Pub","Orange+Pub+Jaco"),("Los Amigos","Los+Amigos+Jaco"),("Beatle Bar","Beatle+Bar+Jaco"),("Puddlefish Brewery","Puddlefish+Brewery+Jaco")]},
  ]},
 ]
 
