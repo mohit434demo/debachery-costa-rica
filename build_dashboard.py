@@ -29,6 +29,8 @@ I={
  "hero_lafortuna":img("lafortuna.jpg",1500),"shuttle":img("shuttle.jpg"),
  "falls":img("fortuna-waterfall.jpg"),"crlunch":img("cr-lunch.jpg"),"arenal":img("lafortuna.jpg"),
  "springs":img("hot-springs.webp"),"crdinner":img("cr-dinner.jpg"),
+ "hero_jaco":img("jaco-hero.jpg",1500),"brekky":img("chef-breakfast.jpg"),"atv":img("atv.jpg"),
+ "pool":img("pool.jpg"),"naans":img("naans-curries.jpg"),"night":img("nightlife.jpg"),
 }
 
 days=[
@@ -78,6 +80,30 @@ days=[
     "body":"Dinner on the drive back to Jaco. Included in the tour. Back at the Airbnb around 10 PM.",
     "facts":["Dinner included","Back ~10 PM"],"map":"Jaco+Costa+Rica"},
  ]},
+ {"id":"jul24","tab":"Fri 24","kick":"Jul 24 · Friday · Day 3","title":"Jaco: ATV, pool & a night out","hero":I["hero_jaco"],
+  "chips":["~85°F / 29°C","Chef breakfast","Night out"],
+  "secs":[
+   {"tag":"Morning","time":"8:00 AM","title":"Chef breakfast at the house","img":I["brekky"],"badge":"Private chef",
+    "body":"Private chef cooks breakfast at the Airbnb: omelettes and pancakes, with coffee, OJ, breads and pastries, seasonal fruit and potatoes.",
+    "facts":["Omelettes + pancakes","Coffee & OJ","Fruit & pastries"],"map":"C.+Bohio,+Jaco,+61101,+Puntarenas,+Costa+Rica",
+    "hop":"Gear up: ATV pickup late morning"},
+   {"tag":"Late morning","time":"11:00 AM-1:00 PM","title":"ATV jungle tour","img":I["atv"],
+    "body":"Two hours ripping through jungle and back trails around Jaco.",
+    "facts":["~2 hrs","Gets muddy","Closed shoes"],"map":"ATV+Jungle+Tour+Jaco",
+    "bring":["Closed-toe shoes","Clothes you can trash","Sunglasses","Sunscreen"],
+    "hop":"Back to the Airbnb to rinse off"},
+   {"tag":"Afternoon","time":"~2:00-6:00 PM","title":"Pool & chill","img":I["pool"],
+    "body":"Downtime at the house. Pool, drinks, recover before dinner.",
+    "facts":["Pool day","Recharge"],"map":"C.+Bohio,+Jaco,+61101,+Puntarenas,+Costa+Rica","hop":"~10 min to Plaza Tangeri for dinner"},
+   {"tag":"Evening","time":"7:15 PM","title":"Dinner at Naans & Curries","img":I["naans"],"badge":"Reserve for the group",
+    "body":"Indian dinner at <strong>Naans & Curries</strong>, Plaza Tangeri. Strong veg options for the group. Mains &#8353;7,990-12,990 (~$15-25); 13% tax + 10% service added.",
+    "facts":["Butter Chicken","Lamb Rogan Josh","Paneer Tikka Masala (veg)","Garlic naan"],"map":"Naans+and+Curries+Jaco",
+    "link":("Menu & website","https://www.naans-curries.com/")},
+   {"tag":"Night","time":"11:00 PM","title":"Out in Jaco","img":I["night"],
+    "body":"Hit the Jaco strip: bars and clubs a few minutes from the house.",
+    "facts":["Jaco strip","Bars & clubs"],"map":"Jaco+nightlife",
+    "night":[("Le Loft Jaco","Le+Loft+Jaco"),("Orange Pub","Orange+Pub+Jaco"),("Republik Jaco","Republik+Jaco")]},
+ ]},
 ]
 
 def fct(fs): return "".join(f'<span class="fact">{x}</span>' for x in fs)
@@ -98,6 +124,10 @@ def bring(items):
     pills="".join(f'<span class="bpill">{x}</span>' for x in items)
     return f'<div class="bring"><span class="bhdr">&#127890; Pack a drawstring bag</span><div class="bwrap">{pills}</div></div>'
 
+def night(f):
+    if not f: return ""
+    return '<div class="food"><span class="foodhdr">&#127864; Nightlife</span>'+"".join(f'<a class="foodlink" href="https://www.google.com/maps/search/?api=1&query={q}" target="_blank">{n}</a>' for n,q in f)+'</div>'
+
 def card(i,s):
     b=f'<span class="badge">{s["badge"]}</span>' if s.get("badge") else ""
     lu='<div class="lunch">This is where you\'ll have lunch</div>' if s.get("lunch") else ""
@@ -107,7 +137,7 @@ def card(i,s):
     lk=s.get("link")
     lka=f'<a class="ml lkx" href="{lk[1]}" target="_blank">{lk[0]}</a>' if lk else ""
     return f'''{rest}<article class="card"><div class="dot">{i+1}</div><div class="photo"><img src="{s['img']}" loading="lazy"></div>
-<div class="cb"><div class="ct"><span class="tg">{s['tag']}</span><span class="tm">{s['time']}</span></div><h3>{s['title']}{b}</h3><p>{s['body']}</p>{lu}{food(s.get('food'))}{supplies(s.get('supplies'))}{bring(s.get('bring'))}<div class="facts">{fct(s['facts'])}</div><a class="ml" href="https://www.google.com/maps/search/?api=1&query={s['map']}" target="_blank">Open in Maps</a>{lka}</div></article>{hop}'''
+<div class="cb"><div class="ct"><span class="tg">{s['tag']}</span><span class="tm">{s['time']}</span></div><h3>{s['title']}{b}</h3><p>{s['body']}</p>{lu}{food(s.get('food'))}{night(s.get('night'))}{supplies(s.get('supplies'))}{bring(s.get('bring'))}<div class="facts">{fct(s['facts'])}</div><a class="ml" href="https://www.google.com/maps/search/?api=1&query={s['map']}" target="_blank">Open in Maps</a>{lka}</div></article>{hop}'''
 
 tabs="".join(f'<button class="tab" data-d="{d["id"]}" onclick="show(\'{d["id"]}\')">{d["tab"]}</button>' for d in days)
 panels=""
