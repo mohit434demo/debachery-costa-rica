@@ -97,7 +97,7 @@ days=[
    {"tag":"Afternoon","time":"~2:00-6:00 PM","title":"Pool & chill","img":I["pool"],
     "body":"Downtime at the house. Pool, drinks, recover before dinner.",
     "facts":["Pool day","Recharge"],"map":"C.+Bohio,+Jaco,+61101,+Puntarenas,+Costa+Rica","hop":"~10 min to Plaza Tangeri for dinner"},
-   {"tag":"Evening","time":"7:15 PM","title":"Dinner at Naans & Curries","img":I["naans"],"badge":"Reserve for the group",
+   {"tag":"Evening","time":"7:15 PM","title":"Dinner at Naans & Curries","img":I["naans"],"badge":"Reserved",
     "body":"Indian dinner at <strong>Naans & Curries</strong>, Plaza Tangeri. Strong veg options for the group. Mains &#8353;7,990-12,990 (~$15-25); 13% tax + 10% service added.",
     "facts":["Butter Chicken","Lamb Rogan Josh","Paneer Tikka Masala (veg)","Garlic naan"],"map":"Naans+and+Curries+Jaco",
     "link":("Menu & website","https://www.naans-curries.com/")},
