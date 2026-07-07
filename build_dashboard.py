@@ -123,6 +123,21 @@ days=[
     "body":"Pool, music, drinks. Last big night at the house.",
     "facts":["Pool party","Music & drinks"],"map":"C.+Bohio,+Jaco,+61101,+Puntarenas,+Costa+Rica"},
  ]},
+ {"id":"jul26","tab":"Sun 26","kick":"Jul 26 · Sunday · Day 5","title":"Checkout & fly home","hero":I["hero_jaco"],
+  "chips":["Checkout day","SJO -> MIA -> ORD"],
+  "secs":[
+   {"tag":"Morning","time":"Checkout","title":"Pack up & check out","img":I["chill"],
+    "body":"Last morning at the house. Pack up, settle up, and clear out.",
+    "facts":["Pack up","Settle up"],"map":"C.+Bohio,+Jaco,+61101,+Puntarenas,+Costa+Rica",
+    "hop":"Shuttle Jaco -> SJO airport, ~1.5-2 hrs"},
+   {"tag":"Transfer","time":"Midday","title":"Jaco to SJO airport","img":I["shuttle"],
+    "body":"Ride back to San Jose airport. Leave buffer for check-in and security.",
+    "facts":["~1.5-2 hrs","Terminal SJO"],"map":"Juan+Santamaria+International+Airport+SJO",
+    "hop":"AA 1600 departs 12:58 PM"},
+   {"tag":"Fly home","time":"12:58 PM","title":"SJO -> MIA -> ORD","img":I["sjo"],
+    "body":"AA 1600 SJO -> MIA 12:58-6:03 PM, 2:02 layover in Miami, then AA 1881 MIA -> ORD 8:05-10:38 PM.",
+    "facts":["AA 1600 12:58-6:03p","2:02 layover MIA","AA 1881 8:05-10:38p"],"map":"O'Hare+International+Airport+ORD"},
+ ]},
 ]
 
 def fct(fs): return "".join(f'<span class="fact">{x}</span>' for x in fs)
