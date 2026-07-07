@@ -31,6 +31,8 @@ I={
  "springs":img("hot-springs.webp"),"crdinner":img("cr-dinner.jpg"),
  "hero_jaco":img("jaco-hero.jpg",1500),"brekky":img("chef-breakfast.webp"),"atv":img("atv.jpg"),
  "pool":img("pool.avif"),"naans":img("naan-curries.png"),"night":img("nightlife.jpg"),
+ "hero_j25":img("jul25-hero.avif",1500),"d4chill":img("day4-chill.avif"),"beach":img("jaco beach.jpg"),
+ "chefdin":img("chef dinner.jpg"),"party":img("house-party.jpg"),
 }
 
 days=[
@@ -103,6 +105,23 @@ days=[
     "body":"Jaco's nightlife runs along Av. Pastor Diaz, a few minutes from the house. Le Loft and Republik are the big dance clubs; Orange Pub and Los Amigos are the busy bar scene; the Beatle Bar goes latest; Puddlefish is the craft-beer pick.",
     "facts":["Clubs & bars","Walkable strip","Goes late"],"map":"Av+Pastor+Diaz+Jaco+nightlife",
     "night":[("Le Loft","Le+Loft+Jaco"),("Republik","Republik+Jaco"),("Orange Pub","Orange+Pub+Jaco"),("Los Amigos","Los+Amigos+Jaco"),("Beatle Bar","Beatle+Bar+Jaco"),("Puddlefish Brewery","Puddlefish+Brewery+Jaco")]},
+ ]},
+ {"id":"jul25","tab":"Sat 25","kick":"Jul 25 · Saturday · Day 4","title":"Beach day & chef dinner","hero":I["hero_j25"],
+  "chips":["~85°F / 29°C","Beach day","Chef dinner"],
+  "secs":[
+   {"tag":"Late morning","time":"10:00 AM","title":"Slow start at the house","img":I["d4chill"],
+    "body":"Sleep in and recover. Pool, coffee, breakfast at your own pace.",
+    "facts":["Pool day","No agenda"],"map":"C.+Bohio,+Jaco,+61101,+Puntarenas,+Costa+Rica","hop":"~5 min to the beach"},
+   {"tag":"Afternoon","time":"2:00 PM","title":"Playa Jaco","img":I["beach"],
+    "body":"Head to the beach for the afternoon. Swim, surf, sunset.",
+    "facts":["Swim & surf","Sunset spot"],"map":"Playa+Jaco+Costa+Rica",
+    "bring":["Sunscreen","Towel","Cash for drinks"],"hop":"Back to the house to clean up for dinner"},
+   {"tag":"Evening","time":"7:00 PM","title":"Chef dinner at the house","img":I["chefdin"],"badge":"Private chef",
+    "body":"Big private-chef dinner at the Airbnb: empanadas with pico to start, Mexican chicken in jalapeno-tequila sauce, rosemary potatoes, and Tres Leches for dessert. Veg option covered (coconut rice & beans, salad, picadillo, fried cheese, avocado, eggs).",
+    "facts":["Empanadas + pico","Jalapeno-tequila chicken","Veg option","Tres Leches"],"map":"C.+Bohio,+Jaco,+61101,+Puntarenas,+Costa+Rica"},
+   {"tag":"Night","time":"Late","title":"House party","img":I["party"],
+    "body":"Pool, music, drinks. Last big night at the house.",
+    "facts":["Pool party","Music & drinks"],"map":"C.+Bohio,+Jaco,+61101,+Puntarenas,+Costa+Rica"},
  ]},
 ]
 
