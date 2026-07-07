@@ -25,7 +25,7 @@ def img(fn, maxw=820, q=80):
 I={
  "hero":img("hero.jpg",1500,76),
  "sjo":img("sjo-airport.webp"),"jaco":img("jaco.jpg"),"airbnb":img("airbnb.avif"),
- "dinner1":img("dinner-night1.jpg"),"chill":img("airbnb-chill.avif"),
+ "dinner1":img("dinner-night1.jpg"),"chill":img("airbnb chill 2.avif"),
  "hero_lafortuna":img("lafortuna.jpg",1500),"shuttle":img("shuttle.jpg"),
  "falls":img("fortuna-waterfall.jpg"),"crlunch":img("cr-lunch.jpg"),"arenal":img("lafortuna.jpg"),
  "springs":img("hot-springs.webp"),"crdinner":img("cr-dinner.jpg"),
